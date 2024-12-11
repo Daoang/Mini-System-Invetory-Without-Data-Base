@@ -12,33 +12,33 @@ Features
 
 Login Window
 
-• Role-Based Authentication: Supports two roles - ADMINISTRATOR and USER.
-• Username/Password Validation:
-  • ADMINISTRATOR: Username: Admin, Password: Admin
-  • USER: Username: Rey, Password: Pogi
-• Error Handling: Displays error messages for incorrect credentials.
+1 Role-Based Authentication: Supports two roles - ADMINISTRATOR and USER.
+2 Username/Password Validation:
+  3 ADMINISTRATOR: Username: Admin, Password: Admin
+  4 USER: Username: Rey, Password: Pogi
+5 Error Handling: Displays error messages for incorrect credentials.
 
 Inventory Management (Stabs Window)
 
-• Add Items: Add items to the inventory with details like name, quantity, ID, and price.
-• Edit Items: Modify existing item details directly.
-• Delete Items: Remove items from the inventory.
-• Clear Inventory: Option to clear all items from the inventory table.
-• Search Functionality: Search items by name and dynamically filter results.
-• Price Formatting: Automatically formats prices with the Peso (\u20B1) sign and two decimal points.
-• Color-Coded Quantity:
-  • Quantity >= 100: Green
-  • 50 <= Quantity < 100: Yellow
-  • Quantity < 50: Red
-• Role Display: Displays the logged-in user's role and username.
+1 Add Items: Add items to the inventory with details like name, quantity, ID, and price.
+2 Edit Items: Modify existing item details directly.
+3 Delete Items: Remove items from the inventory.
+4 Clear Inventory: Option to clear all items from the inventory table.
+5 Search Functionality: Search items by name and dynamically filter results.
+6 Price Formatting: Automatically formats prices with the Peso (\u20B1) sign and two decimal points.
+7 Color-Coded Quantity:
+  8 Quantity >= 100: Green
+  9 50 <= Quantity < 100: Yellow
+  10 Quantity < 50: Red
+11 Role Display: Displays the logged-in user's role and username.
 
 Technology Stack
 
-• Java SE: Core programming language.
-• Swing: For creating GUI components.
-• JTable: For displaying and managing inventory data.
-• TableRowSorter: For dynamic table filtering.
-• DecimalFormat: For price formatting.
+1 Java SE: Core programming language.
+2 Swing: For creating GUI components.
+3 JTable: For displaying and managing inventory data.
+4 TableRowSorter: For dynamic table filtering.
+5 DecimalFormat: For price formatting.
 
 Installation
 
@@ -56,42 +56,42 @@ Steps
 Usage
 
 1. Login:
-   • Enter the username, password, and role to access the system.
-   • For testing, use the predefined credentials.
+   1 Enter the username, password, and role to access the system.
+   2 For testing, use the predefined credentials.
 
 2. Manage Inventory:
-   • Use the Add Item button to insert new items.
-   • Search items using the search bar at the top.
-   • Edit or delete items by selecting them in the table.
-   • Clear all inventory items if needed.
+   1 Use the Add Item button to insert new items.
+   2 Search items using the search bar at the top.
+   3 Edit or delete items by selecting them in the table.
+   4 Clear all inventory items if needed.
 
 3. Logout:
-   • Use the Sign Out button to return to the login window.
+   1 Use the Sign Out button to return to the login window.
 
 Code Structure
 
 CustomTable
 A subclass of JTable with custom rendering and data handling capabilities.
-• Key Features:
-   • ActionListener for the login button validates credentials and launches the main window.
+1 Key Features:
+   2 ActionListener for the login button validates credentials and launches the main window.
 
 stabs
 The primary interface for inventory management.
-• Key Components:
-   • clearFields(): Resets input fields.
-   • deleteItem(): Removes selected items.
-   • filterTable(String): Filters table rows based on input text.
-   • formatPrice(String): Formats prices with a Peso sign.
+1 Key Components:
+   2 clearFields(): Resets input fields.
+   3 deleteItem(): Removes selected items.
+   4 filterTable(String): Filters table rows based on input text.
+   5 formatPrice(String): Formats prices with a Peso sign.
 
 Future Enhancements
-   • Implement a database for persistent data storage.
-   • Add user registration and dynamic role management.
-   • Enhance the GUI with modern libraries like JavaFX or external themes.
-   • Export inventory data to CSV or Excel.
+   1 Implement a database for persistent data storage.
+   2 Add user registration and dynamic role management.
+   3 Enhance the GUI with modern libraries like JavaFX or external themes.
+   4 Export inventory data to CSV or Excel.
 
 Acknowledgments
-   • Java Swing Documentation
-   • Open-source Java libraries and examples.
+   1 Java Swing Documentation
+   2 Open-source Java libraries and examples.
 
 
 
